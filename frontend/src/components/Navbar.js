@@ -1,12 +1,14 @@
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
+import img from'../images/Vector.png';
 
 const Navbar = () => {
     return (
         <div className='navigationBar'>
-            <Link className="link" to='/'><li>About Us</li></Link>
-            <Link className="link" to='/'><li>Find a Trivia</li></Link>
-            <Link className="link" to='/'><li>Events</li></Link>
-            <Link className='login' to='/'>Login</Link>
+            <img src={img}/>
+            <HashLink  to="./#aboutSection" className='link'>About Us</HashLink>
+            <HashLink to="./#findSection" className='link' >Find a Trivia</HashLink>
+            <HashLink to='./#eventSection' className='link' >Events</HashLink>
+            <HashLink to='/' className='login' >Login</HashLink>
         </div>
     )
 }
