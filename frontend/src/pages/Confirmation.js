@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { Context } from '../context/Context';
 
+
+
 const Confirmation = () => {
 
     const { nameState, emailState, lastNameState, passwordState } = useContext(Context);
@@ -11,7 +13,7 @@ const Confirmation = () => {
 
     return (
         <div>
-            <img className="confImage" alt="" />
+            <img className="confImage"alt="" />
             <h2>You’ve successfully created your account!</h2>
                 <div className="confInfo">
                     <div>Name: {name} {lastName}</div>

@@ -317,7 +317,7 @@ border-radius: 8px;
   display: flex;
 }
 
-.topicImg{
+.topicImg, .accountImg {
 height: 1040px;
 width: 760px;
 }
@@ -385,4 +385,59 @@ text-align: center;
 
 }
 
+.account{
+  display: flex;
+}
 
+.accountRight{
+height: 727px;
+width: 441px;
+margin-left: 100px;
+margin-top: 86px;
+}
+
+.accountRight h2{
+font-family: Open Sans;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: left;
+padding-bottom: 40px;
+border-bottom: 3px solid gray ;
+}
+
+.accountRight p{
+font-family: Open Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.accountForm{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.accountForm p{
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+
+.accountForm input{
+  border: 1px solid gray;
+height: 64px;
+width: 406px;
+border-radius: 8px;
+
+  }
