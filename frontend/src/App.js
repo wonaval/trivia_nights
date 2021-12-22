@@ -1,15 +1,17 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
 import Dashboard from './pages/Dashboard';
 import Landing from './pages/Landing';
-import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
       <Landing />
-      
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </div>
   );
 }
