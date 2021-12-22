@@ -1,9 +1,11 @@
 import axios from 'axios';
 
 const DashStats = (props) => {
+    const sortedUsers = props.userList.sort()
+
     return (
         <div className="dashStats" >
-            <section></section> {/*black bar under DashHeader/above the data viz*/}
+            <section></section>
             <div className="signUpNumbers">
                 <h3>Sign-ups</h3>
                 <p>{props.userList.length}</p>
@@ -15,13 +17,10 @@ const DashStats = (props) => {
                 <p>Sign-ups: Last 180 days</p>
             </div>
             <div className="newUsers">
-                <p>New Users</p>
-                <div>
-                    <div>
-                    <span>Name</span>
-                    <span>Email Address</span>
-                    <span>Signup Date</span>
-                    </div>
+                <div className='newUsersHeader'>
+                    <span className='userHeaderMargin'>New Users</span>
+                </div>
+                <div className='newUsersContainer'>
                     {props.userList && props.userList.map((user, i)=>{
                         return (
                             <div key={i} className='userContainer'>

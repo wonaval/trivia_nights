@@ -4,7 +4,7 @@ import DashStats from '../components/DashStats';
 import DashPastEvents from '../components/DashPastEvents';
 import axios from 'axios'
 import { useState, useEffect }  from 'react'
-import './Dashboard.css'
+import '../index.css'
 
 const Dashboard = () => {
     const [ userList, setUserList ] = useState([]);

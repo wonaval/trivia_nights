@@ -11,3 +11,121 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+    background-color: #E5E5E5;
+}
+
+
+.dashPastEvents {
+    width: 800px;
+
+}
+
+.eventHeader {
+  width: 800px;
+}
+
+
+.progressBorder {
+        width: 260px;
+    border-radius: 0 0 8px 8px;
+    background-color: #333333;
+    color: white;
+    position: relative;
+}
+
+.percent {
+    position: absolute;
+    left: 10px;
+    top: auto;
+}
+
+.progressInner {
+    background-color: #9A2143;
+    border-radius: 0 0 0 8px;
+    height: 33px;
+}
+
+.eventContainer {
+    background-color: #FFFFFF;
+    width: 260px;
+    height: 141px;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.eventName {
+    color: #2D758F;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.eventDate {
+    color: #333333;
+    font-size: 16px;
+    margin: 12px 20px;
+}
+
+.eventVenue {
+    color: #000000;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.newUsers {
+    background-color: white;
+    border-radius: 8px;
+    width: 440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newUsersHeader {
+  background-color: #9A2143;
+  color: #FFFFFF;
+  font-size: 24px;
+  border-radius: 8px 8px 0 0;
+  width: 440px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.userHeaderMargin {
+  margin-left: 20px;
+}
+
+.newUsersContainer {
+    width: 400px;
+    padding: 15px 0;
+}
+
+.userContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.userName {
+    width: 134px;
+    text-align: left;
+}
+.userEmail {
+    width: 180px;
+    text-align: left;
+}
+.userDate {
+    width: 85px;
+}
