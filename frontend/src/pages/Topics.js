@@ -14,8 +14,8 @@ const Topics = () => {
             <div className="topicRight">
                 <h2>Welcome to Team Rocket Trivia, {name}!</h2>
                 <p>Which of these topics are you interested in?</p>
-                <div className="topicNextPage">
-                    <button className="buttons">Next</button>
+                <div className="topicButtons">
+                   
                     <button >Music</button>
                     <button >Film</button>
                     <button >Sports</button>
@@ -26,7 +26,7 @@ const Topics = () => {
                     <button >Current Events</button>
                 </div>
                 <div className="topicNextPage">
-                    <Link to='/account'>Skip</Link>
+                    <Link to='/account' className="skip">Skip</Link>
                     <Link to='/account'>
                         <button className="buttons">Next</button>
                     </Link>
