@@ -14,7 +14,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/topics" element={ <Topics /> } />
         <Route path="/account" element={ <Account /> } />
-        <Route path="/confirmation" element={ <Confirmation /> } />
+        <Route path="/account/Confirmation" element={ <Confirmation /> } />
       </Routes>
     </div>
   );
