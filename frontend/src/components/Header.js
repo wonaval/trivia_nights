@@ -3,9 +3,9 @@ import SignupForm from "./SignupForm"
 
 const Header = () => {
     return (
-        <div>
+        <div className="header" >
         <Navbar />
-        <h1>Compete with your friends</h1>
+        <h1 className="Title">Compete with your friends</h1>
         <h3>Get updates about trivia near you</h3>
         <SignupForm />
         </div>

@@ -2,16 +2,17 @@ import Header from "../components/Header"
 import About from "../components/About"
 import Find from "../components/Find"
 import Events from "../components/Events"
-import Account from "./Account"
+import Footer from "../components/Footer"
 
 const Landing = () => {
     return (
-        <div>
-            <div>Landing Page</div>
+        <div className="userHome">
+            <p>Landing Page</p>
             <Header />
             <About />
             <Find />
             <Events />
+            <Footer />
         </div>
     )
 }
