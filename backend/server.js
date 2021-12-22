@@ -10,7 +10,9 @@ app.use(express.json())
 const userRoutes= require('./routes/userRoutes')
 app.use('/users', userRoutes)
 
+const eventRoutes= require('./routes/eventRoutes')
+app.use('/events', userRoutes)
+
 app.listen(3001, () => {
         routesReport.print()
-        })
-    
+})

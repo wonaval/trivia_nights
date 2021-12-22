@@ -1,56 +1,23 @@
-const DashPastEvents = () => {
+const DashPastEvents = (props) => {
     return (
-        <div className="dashPastEvents" >
-            <section>
-                <p>9/6</p>
-                <p>Music</p>
-                <p>Location</p>
-                <section>data viz here</section>
-            </section>
-            <section>
-                <p>9/6</p>
-                <p>Film</p>
-                <p>Location</p>
-                <section>data viz here</section>
-            </section>
-            <section>
-                <p>9/6</p>
-                <p>Sports</p>
-                <p>Location</p>
-                <section>data viz here</section>
-            </section>
-            <section>
-                <p>9/6</p>
-                <p>General</p>
-                <p>Location</p>
-                <section>data viz here</section>
-            </section>
-            <section>
-                <p>9/6</p>
-                <p>Pop Culture</p>
-                <p>Location</p>
-                <section>data viz here</section>
-            </section>
-            <section>
-                <p>9/6</p>
-                <p>History</p>
-                <p>Location</p>
-                <section>data viz here</section>
-            </section>
-            <section>
-                <p>9/6</p>
-                <p>Science</p>
-                <p>Location</p>
-                <section>data viz here</section>
-            </section>
-            <section>
-                <p>9/6</p>
-                <p>Current Events</p>
-                <p>Location</p>
-                <section>data viz here</section>
-            </section>
+        <div className="dashPastEvents">
+            <div className=''><h2>Upcoming Events</h2><span><a href=''>Past Events</a></span></div>
+                {props.eventList && props.eventList.map((event, i)=>{
+                    const random = Math.floor(Math.random()*20)*5
+                    return (
+                        <div key={i} className='eventContainer'>
+                            <div className='eventDate'>{event.date}</div>
+                            <div className='eventName'>{event.name}</div>
+                            <div className='eventVenue'>{event.venue}</div>
+                            <div className='progressBorder'>
+                                <span className='percent'>Event {random}% booked</span>
+                                <div className='progressInner' style={{height : 33, width : `${random}%`}}></div>
+                        </div>
+                        </div>
+                    )
+                })}
         </div>
     )
 }
 
-export default DashPastEvents;
+export default DashPastEvents

@@ -4,7 +4,6 @@ const userController = require('../controllers/userControllers');
 
 userRoutes.post('/', userController.createUser)
 userRoutes.get('/', userController.fetchAll)
-// userRoutes.get('/users/:id', userController.fetchUser)
 
 
 module.exports = userRoutes
