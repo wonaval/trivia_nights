@@ -317,7 +317,15 @@ border-radius: 8px;
   display: flex;
 }
 
-.topicImg, .accountImg {
+.topicImg, .accountImg, .confImage {
+height: 1040px;
+width: 760px;
+}
+.accountImg{
+height: 1040px;
+width: 760px;
+}
+.confImage {
 height: 1040px;
 width: 760px;
 }
@@ -387,6 +395,7 @@ text-align: center;
 
 .account{
   display: flex;
+  margin: 0px;
 }
 
 .accountRight{
@@ -394,7 +403,12 @@ height: 727px;
 width: 441px;
 margin-left: 100px;
 margin-top: 86px;
-}
+  margin-top:86px;
+  margin-left:100px;
+  margin-right: 221px;
+  margin-bottom: 225px;
+  }
+
 
 .accountRight h2{
 font-family: Open Sans;
@@ -441,3 +455,31 @@ width: 406px;
 border-radius: 8px;
 
   }
+
+  .confirmation{
+    display: flex;
+  }
+  .confirmationRight{
+    height: 379px;
+    width: 448px;
+    margin-left: 100px;
+    margin-top: 86px;
+    border-radius: 0px;
+      margin-right: 221px;
+      margin-bottom: 225px;
+    }
+
+  
+  .confirmationRight h2{
+    font-family: Open Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 40px;
+    border-bottom: 3px solid gray ;
+}
+  
+  /* confInfo */
