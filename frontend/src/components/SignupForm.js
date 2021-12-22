@@ -16,7 +16,7 @@ const SignupForm = () => {
                     type='text' 
                     placeholder="First name"
                     // value={firstName}
-                    onChange={(e) => setName(e.target.value)}/>
+                    onChange={(e) => setFirstName(e.target.value)}/>
  
                 </div>
                 <div className='signUpLine'>
