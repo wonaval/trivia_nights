@@ -7,9 +7,11 @@ import { useState, useEffect }  from 'react'
 
 const Dashboard = () => {
     const [ userList, setUserList ] = useState([]);
+    const [ eventList, setEventList ] = useState([])
 
     useEffect(()=>{
         getUsers()
+        getEvents()
     }, [])
 
 
@@ -22,14 +24,17 @@ const Dashboard = () => {
         }
     }
 
-
+    
+    const getEvents = () => {
+        axios.get('http://localhost:3001/events')
+        .then((response)=>{})
 
     return (
         <div className="dashboard">
             {/* <DashHeader /> */}
             {/* <DashGlobalNav /> */}
             <DashStats userList={userList} setUserList={setUserList}/>
-            {/* <DashPastEvents /> */}
+            <DashPastEvents eventList={eventList} setEventList={setEventList}/>
         </div>
     )
 }
