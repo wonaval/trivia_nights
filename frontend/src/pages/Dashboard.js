@@ -1,7 +1,18 @@
+import DashHeader from '../components/DashHeader';
+import DashGlobalNav from '../components/DashGlobalNav';
+import DashStats from '../components/DashStats';
+import DashPastEvents from '../components/DashPastEvents';
+
 const Dashboard = () => {
     return (
-        <div>Dashboard</div>
+        <div className="dashboard">
+            <DashHeader />
+            <DashGlobalNav />
+            <DashStats />
+            <DashPastEvents />
+            
+        </div>
     )
 }
 
-export default Dashboard
+export default Dashboard;
