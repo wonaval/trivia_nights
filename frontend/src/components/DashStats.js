@@ -1,4 +1,4 @@
-const DashStats = () => {
+const DashStats = (props) => {
     return (
         <div className="dashStats" >
             <section></section> // black bar under DashHeader/above the data viz
@@ -14,14 +14,36 @@ const DashStats = () => {
             </div>
             <div className="newUsers">
                 <p>New Users</p>
-                <section></section> // write out function here to post when users signup
+                <div>
+                    <div>
+                    <span>Name</span>
+                    <span>Email Address</span>
+                    <span>Signup Date</span>
+                    </div>
+                    {props.userList && props.userList.map((user, i)=>{
+                        console.log('User', user)
+                        return (
+                            <div key={i}>
+                                <span>{user.name}</span>
+                                <span>{user.email}</span>
+                                <span>{user.signup_date.slice(0, 10)}</span>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
             <div className="userInterests">
-                <p>436 Users</p>
-                <section></section> // data visualization here
-                <section></section> // data visualization here
+                <div><h3>User Interests</h3></div>
+                <p>{props.userList.length} Users</p>
+                <div>Music: </div>
+                <div>Film: </div>
+                <div>Sports: </div>
+                <div>General Knowledge: </div>
+                <div>Pop Culture: </div>
+                <div>History: </div>
+                <div>Science: </div>
+                <div>Current Events: </div>
             </div>
-            
         </div>
     )
 }
