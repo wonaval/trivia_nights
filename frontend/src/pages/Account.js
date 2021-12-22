@@ -13,13 +13,14 @@ const Account = () => {
     const [ lastName, setLastName ] = lastNameState;
     const [ password, setPassword ] = passwordState;
 
-    const navigate = useNavigate();
+    let navigate = useNavigate();
     
     const createUser = async (e) => {
         e.preventDefault();
         try {
             const signup_date = new Date();
             let response = await axios.post(`http://localhost:3001/users`, { name, email, password, signup_date })
+            navigate('./Confirmation')
         } catch (error) {
             console.log(error)
         }
