@@ -5,9 +5,11 @@ const Header = () => {
     return (
         <div className="header" >
         <Navbar />
+        <div className="titleSignup">
         <h1 className="Title">Compete with your friends</h1>
-        <h3>Get updates about trivia near you</h3>
+        <p>Get updates about trivia near you</p>
         <SignupForm />
+        </div>
         </div>
         )
 }

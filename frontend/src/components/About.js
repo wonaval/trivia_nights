@@ -1,3 +1,5 @@
+import img from'../images/unsplash_8x.png';
+
 const About = () => {
     return (
         <div>

@@ -1,6 +1,159 @@
 .App {
   text-align: center;
+  padding: 0px;
+  margin: 0px;
 }
 .header{
   background: url('./images/image\ 1.png');
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 99vw;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
+
+.navigationBar{
+  display: flex;
+  margin-right: 5vw;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  width: 80vw;
+  justify-content: right;
+  align-items: center;
+
+}
+
+.link{
+  text-decoration: none;
+  color: aliceblue;
+  margin-right: 2vmin;
+  font-size: 2.5vmin;
+  
+  
+}
+.login{
+  background: #2D758F;
+  font-size: 2.5vmin;
+  width: 60px;
+  height: 20px;
+  border-radius: .8vmin;
+  color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: .1vmin;
+}
+.signupForm{
+  display: flex;
+  align-items: center;
+   /* position: absolute;
+  top:30vh; */
+}
+
+.titleSignup{
+  position: absolute; 
+  top:35vh; 
+  font-family: 'Open Sans';
+}
+.Title{
+  /* border: 1px solid rgb(255, 252, 252); */
+  margin-bottom: 1.5vmin;
+
+}
+.titleSignup p{
+  /* border: 1px solid rgb(255, 252, 252); */
+  margin-top: 0vh;
+  margin-bottom: 7vmin;
+}
+
+.nameSignup{
+  border-radius: .5vmin;
+  border:1px solid black;
+  margin-right: 1vmin;
+  width: 15vw;
+}
+.emailSignup{
+  border-radius: .5vmin;
+  border:1px solid black;
+  margin-right: 1vmin;
+  width: 25vw;
+}
+.buttons{
+  background: #E23D6F;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding-top: .5vmin;
+  padding-bottom: .5vmin;
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+  font-size: 2vmin;
+}
+
+/* font-size: 48px;
+height: 65px;
+width: 641px; */
+/* left: 413px;
+top: 226px; */
+
+
+.homePageSection{
+  display: flex;
+  border: 1px solid black;
+  margin:10vmin;
+  justify-content:space-evenly;
+}
+
+.homepageComp{
+  width: 32vw;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  border: 1px solid black;
+  text-align: left;
+  margin: 5vmin;
+}
+.homepageComp p{
+  height: 19vh;
+  font-size: 11px ;
+  text-align: left;
+  border: 1px solid black;
+  margin: 0px;
+  /* margin:5vmin; */
+
+}
+.image{
+  height: 44vh;
+  width: 35vw;
+  border-radius: .8vmin;
+  margin: 7vmin;
+}
+
+.buttonTeal{
+  background: #2D758F;
+  
+  width: 120px;
+  height: 25px;
+  border-radius: .8vmin;
+  color: white;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.footer{
+  display: flex;
+  background: black;
+  color:white ;
+  height: 15vh;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 15vw;
+   align-items: center;
+}
+
+
