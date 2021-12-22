@@ -1,3 +1,4 @@
+import img from'../images/FindTrivia.png';
 
 const Find = () => {
     return (
@@ -10,7 +11,7 @@ const Find = () => {
                     </p>
                     <button className="buttonTeal">Find a Trivia</button>
                 </div>
-                <img className="image" alt=""/>
+                <img src={img} className="image" alt=""/>
             </div>
         </div>
     )

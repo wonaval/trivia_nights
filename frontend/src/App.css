@@ -38,15 +38,21 @@ body{
 }
 
 .navigationBar{
+  /* position: absolute; */
   display: flex;
   list-style: none;
   color: white;
   width: 1069px;
   height: 46px;
   margin-top: 30px;
+  margin-left:225px;
+  /* justify-self:right ; */
   justify-content: right;
   align-items: center;
 
+}
+.navigationBar img{
+  margin-right: 490px;
 }
 
 .link{
@@ -141,7 +147,8 @@ top: 226px; */
 .homePageSection{
   display: flex;
   border: 1px solid black;
-  margin:10vmin;
+  margin-left:221px;
+  margin-top:103px;
   justify-content:space-evenly;
   height: 353px;
   width: 1070px;
@@ -166,10 +173,12 @@ top: 226px; */
 
 }
 .image{
-  height: 44vh;
-  width: 35vw;
-  border-radius: .8vmin;
-  margin: 7vmin;
+  height: 353px;
+width: 529px;
+/* left: 221px;
+top: 672px; */
+border-radius: 8px;
+
 }
 
 .buttonTeal{
@@ -185,6 +194,7 @@ top: 226px; */
 
 .footer{
   display: flex;
+  margin-top: 100px;
   background: black;
   color:white ;
   height: 15vh;
