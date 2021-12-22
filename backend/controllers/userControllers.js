@@ -22,7 +22,7 @@ userController.createUser= async (req,res)=>{
 
 userController.fetchAll = async (req, res) => {
     try {
-        const users = await models.user.findAll();
+        const users = await models.user.findAll({order: [['createdAt', 'DESC']]});
         res.json({ users });
     } catch (error) {
         res.json({error});

@@ -11,7 +11,7 @@ const userRoutes= require('./routes/userRoutes')
 app.use('/users', userRoutes)
 
 const eventRoutes= require('./routes/eventRoutes')
-app.use('/events', userRoutes)
+app.use('/events', eventRoutes)
 
 app.listen(3001, () => {
         routesReport.print()
