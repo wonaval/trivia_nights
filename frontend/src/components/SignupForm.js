@@ -14,7 +14,6 @@ const SignupForm = () => {
            
             <form className="signupForm">
                 <div className='signUpLine'>
-
                 <p className='signUpLineName'>Name</p>
                 <input className="nameSignup"
                     type='text' 
