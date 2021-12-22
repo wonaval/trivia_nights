@@ -1,5 +1,23 @@
+
+html{
+  /* background-color: burlywood; */
+}
+body{
+  /* background: blue; */
+  padding: 0px;
+}
 .App {
   text-align: center;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+ justify-content: center;
+}
+.userHome{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
 }
@@ -7,92 +25,119 @@
   background: url('./images/image\ 1.png');
   background-position: center;
   background-size: cover;
-  height: 70vh;
-  width: 99vw;
-  padding: 10px;
+ height:565px;
+ width: 1512px;
+   /* height: 70vh; */
+  /* width: 99vw;  */
+  /* padding: 10px; */
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 
 }
 
 .navigationBar{
+  /* position: absolute; */
   display: flex;
-  margin-right: 5vw;
-  text-decoration: none;
   list-style: none;
   color: white;
-  width: 80vw;
+  width: 1069px;
+  height: 46px;
+  margin-top: 30px;
+  margin-left:225px;
+  /* justify-self:right ; */
   justify-content: right;
   align-items: center;
 
+}
+.navigationBar img{
+  margin-right: 490px;
 }
 
 .link{
   text-decoration: none;
   color: aliceblue;
-  margin-right: 2vmin;
-  font-size: 2.5vmin;
+  margin-right: 50px;
+  font-size: 16px;
   
   
 }
 .login{
-  background: #2D758F;
-  font-size: 2.5vmin;
-  width: 60px;
-  height: 20px;
-  border-radius: .8vmin;
-  color: white;
-  border: 1px solid black;
-  text-decoration: none;
-  padding: .1vmin;
-}
-.signupForm{
   display: flex;
   align-items: center;
-   /* position: absolute;
-  top:30vh; */
+  justify-content: center;
+  background: #2D758F;
+  font-size: 16px;
+  text-align: center;
+  width: 80px;
+  height: 35px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
 }
 
+
+
 .titleSignup{
-  position: absolute; 
-  top:35vh; 
-  font-family: 'Open Sans';
+
+margin-left: 413px;
+margin-top: 150px;
 }
 .Title{
   /* border: 1px solid rgb(255, 252, 252); */
-  margin-bottom: 1.5vmin;
+  /* margin-bottom: 1.5vmin; */
+  font-size: 48px;
+  width: 710px;
+  height: 40px;
+  margin-left: 413px;
+margin-top: 150px;
+}
+.titleP{
+  /* border: 1px solid rgb(255, 252, 252); */
+height: 33px;
+width: 391px;
+margin-left: 538px;
+margin-top: 3px;
+font-size: 24px;
 
 }
-.titleSignup p{
-  /* border: 1px solid rgb(255, 252, 252); */
-  margin-top: 0vh;
-  margin-bottom: 7vmin;
+
+.signupForm{
+height: 72px;
+width: 700px;
+margin-left: 390px;
+top: 343px;
+padding: 0px;
 }
+
 
 .nameSignup{
-  border-radius: .5vmin;
+  border-radius: 8px;
   border:1px solid black;
-  margin-right: 1vmin;
-  width: 15vw;
+  margin-right: 5px;
+  width: 150px;
+  height: 40px;
 }
 .emailSignup{
-  border-radius: .5vmin;
+  border-radius: 8px;
   border:1px solid black;
-  margin-right: 1vmin;
-  width: 25vw;
+  margin-right: 11px;
+  width: 350px;
+  height: 40px;
 }
 .buttons{
+  width: 170px;
   background: #E23D6F;
   color: white;
   border: none;
-  border-radius: 2px;
+  border-radius: 8px;
   padding-top: .5vmin;
   padding-bottom: .5vmin;
   padding-left: 2vmin;
   padding-right: 2vmin;
-  font-size: 2vmin;
+  font-size: 18px;
+  height: 40px;
 }
 
 /* font-size: 48px;
@@ -104,56 +149,124 @@ top: 226px; */
 
 .homePageSection{
   display: flex;
-  border: 1px solid black;
-  margin:10vmin;
+  /* border: 1px solid black; */
+  margin-left:221px;
+  margin-top:103px;
   justify-content:space-evenly;
+  height: 353px;
+  width: 1070px;
 }
 
 .homepageComp{
-  width: 32vw;
+  
   display: flex;
   flex-direction: column;
   justify-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: left;
-  margin: 5vmin;
+  margin-left: 101px;
+  margin-right: 30px;
+  /* height: 234px;
+  width: 440px; */
+/* left: 851px;
+top: 752px;
+border-radius: nullpx; */
+
+
+}
+
+.homepageComp h3{
+  height: 41px;
+width: 385px;
+font-family: Open Sans;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 41px;
+letter-spacing: 0em;
+
 }
 .homepageComp p{
-  height: 19vh;
-  font-size: 11px ;
-  text-align: left;
-  border: 1px solid black;
-  margin: 0px;
+height: 234px;
+width: 440px;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+
   /* margin:5vmin; */
 
 }
 .image{
-  height: 44vh;
-  width: 35vw;
-  border-radius: .8vmin;
-  margin: 7vmin;
+  height: 353px;
+width: 529px;
+/* left: 221px;
+top: 672px; */
+border-radius: 8px;
+
 }
 
 .buttonTeal{
   background: #2D758F;
   
-  width: 120px;
-  height: 25px;
+  margin-bottom: 30px;
   border-radius: .8vmin;
   color: white;
   border: 1px solid black;
   text-decoration: none;
+  height: 40px;
+width: 170px;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+padding-left: 20px;
+padding-right: 19px;
+padding-top: 8px;
+padding-bottom: 7px;
+
+
 }
 
 .footer{
-  display: flex;
   background: black;
   color:white ;
+  display: flex;
+  margin-top: 100px;
   height: 15vh;
   font-size: 12px;
   text-align: left;
-  padding-left: 15vw;
    align-items: center;
+  height: 192px;
+  width: 1512px;
+  left: 0px;
+  top: 2055px;
+  border-radius: 0px;
+
+}
+.footer p{
+  margin-left:221px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.footer img{
+  position: absolute;
+  left: 1039px;
+  height: 92px;
+  width: 253px;
+  border-radius: 0px;
+
 }
 
 

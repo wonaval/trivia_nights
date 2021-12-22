@@ -12,12 +12,12 @@ const SignupForm = () => {
         <div>
              
             <form className="signupForm">
-                <input 
+                <input className="nameSignup"
                     type='text' 
                     placeholder="First name"
                     // value={firstName}
-                    onChange={(e) => setName(e.target.value)}/>
-                <input 
+                    onChange={(e) => setFirstName(e.target.value)}/>
+                <input className="emailSignup"
                     type='text'
                     placeholder="Email"
                     // value={email}

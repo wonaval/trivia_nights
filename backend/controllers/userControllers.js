@@ -29,17 +29,4 @@ userController.fetchAll = async (req, res) => {
     }
 }
 
-// userController.fetchUser = async (req, res) => {
-//     try {
-//         const users = await models.user.findOne({
-//             where: {
-//                 id: req.params.id
-//             }
-//         });
-//         res.json({ users });
-//     } catch (error) {
-//         res.json({error});
-//     }
-// }
-
 module.exports = userController;

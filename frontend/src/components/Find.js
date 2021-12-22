@@ -1,8 +1,9 @@
+import img from'../images/FindTrivia.png';
 
 const Find = () => {
     return (
         <div>
-            <div className="findTrivia">
+            <div className="homePageSection">
                 <div className="homepageComp" id="findSection">
                     <h3>Find a Trivia</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis a sed amet et. Iaculis in ut fermentum est. Faucibus quis lectus praesent convallis eu blandit vitae. Ornare turpis habitant mauris, mauris porttitor morbi et.
@@ -10,7 +11,7 @@ const Find = () => {
                     </p>
                     <button className="buttonTeal">Find a Trivia</button>
                 </div>
-                <img className="image" alt=""/>
+                <img src={img} className="image" alt=""/>
             </div>
         </div>
     )
