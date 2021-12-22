@@ -5,23 +5,23 @@ const DashGlobalNav = () => {
     return (
         <div className='dashGlobalNav'>
             <section>
-                <img />
+                <img alt="map pin drop icon" />
                 <Link to='/'>Manage Locations</Link>
             </section>
             <section>
-                <img />
+                <img alt="people gathered icon" />
                 <Link to='/'>Manage Users</Link>
             </section>
             <section>
-                <img />
+                <img alt="calendar icon" />
                 <Link to='/'>Manage Events</Link>
             </section>
             <section>
-                <img />
+                <img alt="document icon" />
                 <Link to='/'>Create Report</Link>
             </section>
             <section>
-                <img />
+                <img alt="circular portrait icon" />
                 <Link to='/'>My Account</Link>
             </section>
         </div>

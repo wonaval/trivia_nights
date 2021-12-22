@@ -1,5 +1,23 @@
+
+html{
+  /* background-color: burlywood; */
+}
+body{
+  /* background: blue; */
+  padding: 0px;
+}
 .App {
   text-align: center;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+ justify-content: center;
+}
+.userHome{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
 }
@@ -7,83 +25,107 @@
   background: url('./images/image\ 1.png');
   background-position: center;
   background-size: cover;
-  height: 70vh;
-  width: 99vw;
-  padding: 10px;
+ height:565px;
+ width: 1512px;
+   /* height: 70vh; */
+  /* width: 99vw;  */
+  /* padding: 10px; */
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 
 }
 
 .navigationBar{
+  /* position: absolute; */
   display: flex;
-  margin-right: 5vw;
-  text-decoration: none;
   list-style: none;
   color: white;
-  width: 80vw;
+  width: 1069px;
+  height: 46px;
+  margin-top: 30px;
+  margin-left:225px;
+  /* justify-self:right ; */
   justify-content: right;
   align-items: center;
 
+}
+.navigationBar img{
+  margin-right: 490px;
 }
 
 .link{
   text-decoration: none;
   color: aliceblue;
-  margin-right: 2vmin;
-  font-size: 2.5vmin;
+  margin-right: 50px;
+  font-size: 16px;
   
   
 }
 .login{
-  background: #2D758F;
-  font-size: 2.5vmin;
-  width: 60px;
-  height: 20px;
-  border-radius: .8vmin;
-  color: white;
-  border: 1px solid black;
-  text-decoration: none;
-  padding: .1vmin;
-}
-.signupForm{
   display: flex;
   align-items: center;
-   /* position: absolute;
-  top:30vh; */
+  justify-content: center;
+  background: #2D758F;
+  font-size: 16px;
+  text-align: center;
+  width: 80px;
+  height: 35px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
 }
 
+
+
 .titleSignup{
-  position: absolute; 
-  top:35vh; 
-  font-family: 'Open Sans';
+
+margin-left: 413px;
+margin-top: 150px;
 }
 .Title{
   /* border: 1px solid rgb(255, 252, 252); */
-  margin-bottom: 1.5vmin;
+  /* margin-bottom: 1.5vmin; */
+  font-size: 48px;
+  width: 710px;
+  height: 40px;
+  margin-left: 413px;
+margin-top: 150px;
+}
+.titleP{
+  /* border: 1px solid rgb(255, 252, 252); */
+height: 33px;
+width: 391px;
+margin-left: 538px;
+margin-top: 3px;
+font-size: 24px;
 
 }
-.titleSignup p{
-  /* border: 1px solid rgb(255, 252, 252); */
-  margin-top: 0vh;
-  margin-bottom: 7vmin;
+
+.signupForm{
+height: 72px;
+width: 710px;
+margin-left: 401px;
+top: 343px;
+padding: 0px;
 }
+
 
 .nameSignup{
   border-radius: .5vmin;
   border:1px solid black;
-  margin-right: 1vmin;
-  width: 15vw;
+  margin-right: 10px;
+  width: 170px;
 }
 .emailSignup{
   border-radius: .5vmin;
   border:1px solid black;
-  margin-right: 1vmin;
-  width: 25vw;
+  margin-right: 11px;
+  width: 350px;
 }
 .buttons{
+  width: 170px;
   background: #E23D6F;
   color: white;
   border: none;
@@ -105,12 +147,15 @@ top: 226px; */
 .homePageSection{
   display: flex;
   border: 1px solid black;
-  margin:10vmin;
+  margin-left:221px;
+  margin-top:103px;
   justify-content:space-evenly;
+  height: 353px;
+  width: 1070px;
 }
 
 .homepageComp{
-  width: 32vw;
+  
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -128,10 +173,12 @@ top: 226px; */
 
 }
 .image{
-  height: 44vh;
-  width: 35vw;
-  border-radius: .8vmin;
-  margin: 7vmin;
+  height: 353px;
+width: 529px;
+/* left: 221px;
+top: 672px; */
+border-radius: 8px;
+
 }
 
 .buttonTeal{
@@ -147,6 +194,7 @@ top: 226px; */
 
 .footer{
   display: flex;
+  margin-top: 100px;
   background: black;
   color:white ;
   height: 15vh;
