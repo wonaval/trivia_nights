@@ -8,7 +8,7 @@ app.use(require('cors')())
 app.use(express.json())
 
 const userRoutes= require('./routes/userRoutes')
-app.use('/user',userRoutes)
+app.use('/users', userRoutes)
 
 app.listen(3001, () => {
         routesReport.print()
