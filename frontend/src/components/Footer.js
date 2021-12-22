@@ -1,8 +1,10 @@
 const Footer = () => {
     return (
         <div className="footer">
-            © Team Rocket Trivia 2021.
+            <p>
+            © Team Rocket Trivia 2021.<br/>
             Made in Hawaii, Washington, California, Illinois, and Massachusetts.
+            </p>
         </div>
     )
 }
