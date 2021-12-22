@@ -9,17 +9,27 @@ const SignupForm = () => {
     return (
         <div>
              
+                 
+                
+           
             <form className="signupForm">
+                <div className='signUpLine'>
+
+                <p className='signUpLineName'>Name</p>
                 <input className="nameSignup"
                     type='text' 
                     placeholder="First name"
                     // value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}/>
+                </div>
+                <div className='signUpLine'>
+                <p className='signUpLineEmail'>Email</p>   
                 <input className="emailSignup"
                     type='text'
                     placeholder="Email"
                     // value={email}
                     onChange={(e) => setEmail(e.target.value)}/>
+                </div>
                 <Link to="/topics">
                     <input className="buttons" type="submit" value='Sign Up'/>
                 </Link>
