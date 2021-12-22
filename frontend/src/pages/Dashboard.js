@@ -4,6 +4,7 @@ import DashStats from '../components/DashStats';
 import DashPastEvents from '../components/DashPastEvents';
 import axios from 'axios'
 import { useState, useEffect }  from 'react'
+import './Dashboard.css'
 
 const Dashboard = () => {
     const [ userList, setUserList ] = useState([]);
@@ -17,7 +18,7 @@ const Dashboard = () => {
 
     const getUsers = () => {
         try {
-            axios.get('http://localhost:3001/user')
+            axios.get('http://localhost:3001/users')
             .then((response)=>{setUserList(response.data.users);})
         } catch (error) {
             console.log(error)
@@ -26,8 +27,13 @@ const Dashboard = () => {
 
     
     const getEvents = () => {
-        axios.get('http://localhost:3001/events')
-        .then((response)=>{})
+        try {
+            axios.get('http://localhost:3001/events')
+            .then((response)=>{setEventList(response.data.events)})
+        } catch (error) {
+            
+        }
+    }
 
     return (
         <div className="dashboard">
