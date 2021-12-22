@@ -5,13 +5,10 @@ const SignupForm = () => {
 
     const [ firstName, setFirstName ] = useState("");
     const [ email, setEmail ] = useState("");
+    const [ name, setName ] = useState("");
 
     return (
         <div>
-             
-                 
-                
-           
             <form className="signupForm">
                 <div className='signUpLine'>
                 <p className='signUpLineName'>Name</p>
