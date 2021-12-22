@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from 'axios';
 
-const DashStats = () => {
+const DashStats = (props) => {
 
     const [ signUps, setSignUps ] = useState('')
     const [ newUsers, setNewUsers ] = useState([])
