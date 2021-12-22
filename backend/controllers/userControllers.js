@@ -12,12 +12,35 @@ userController.createUser= async (req,res)=>{
             interest:req.body.interest,
             location:req.body.location
         })
-
-        res.json({newUser})
+        res.json({newUser});
+        
     }
     catch(err){
-        res.json(err)
+        res.json(err);
     }
 }
 
-module.exports = userController
+
+userController.fetchAll = async (req, res) => {
+    try {
+        const users = await models.user.findAll();
+        res.json({ users });
+    } catch (error) {
+        res.json({error});
+    }
+}
+
+userController.fetchUser = async (req, res) => {
+    try {
+        const users = await models.user.findOne({
+            where: {
+                id: req.params.id
+            }
+        });
+        res.json({ users });
+    } catch (error) {
+        res.json({error});
+    }
+}
+
+module.exports = userController;
