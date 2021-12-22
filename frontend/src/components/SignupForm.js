@@ -8,7 +8,7 @@ const SignupForm = () => {
 
     return (
         <div>
-            Sign up Form
+             
             <form className="signupForm">
                 <input 
                     type='text' 
