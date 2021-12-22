@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     return (
         <div className='navigationBar'>
-            <Link to='/'>About Us</Link>
-            <Link to='/'>Find a Trivia</Link>
-            <Link to='/'>Events</Link>
-            <Link to='/'>Login</Link>
+            <HashLink to="./#aboutSection">About Us</HashLink>
+            <HashLink to="./#findSection">Find a Trivia</HashLink>
+            <HashLink to='./#eventSection'>Events</HashLink>
+            <HashLink to='/'>Login</HashLink>
         </div>
     )
 }
