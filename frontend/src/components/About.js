@@ -10,7 +10,7 @@ const About = () => {
                     Eu eu etiam vestibulum felis pharetra.
 
                     Fermentum fermentum id elementum quam. Risus at ac velit eget tempor. Netus nunc pulvinar a iaculis. Purus, diam blandit ut velit imperdiet mi dui.</p>
-                </div>
+                
             </div>
         </div>
     )
