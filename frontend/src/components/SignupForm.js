@@ -2,10 +2,10 @@ const SignupForm = () => {
     return (
         <div>
             Sign up Form
-            <form>
+            <form className="signupForm">
                 <input type='text' placeholder="First name"/>
                 <input type='text' placeholder="Email"/>
-                <input type='submit' value='Sign Up'/>
+                <input className="buttons" type='submit' value='Sign Up'/>
             </form>
 
         </div>
