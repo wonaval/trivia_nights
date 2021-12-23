@@ -20,7 +20,7 @@ const SignupForm = () => {
  
                 </div>
                 <div className='signUpLine'>
-                <p className='signUpLineEmail'>Email</p>   
+                <p className='signUpLineEmail'>Email</p>
 
                 <input className="emailSignup"
                     type='text'
