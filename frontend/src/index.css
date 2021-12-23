@@ -22,13 +22,30 @@ body {
 
 } 
 
-.eventHeader {
+.dashStats {
+  margin: 0 0 10px 0;
+}
+.eventsHeader {
   width: 800px;
   height: 74px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 0 10px 0;
+  background-color:#9A2143;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+a {
+  color: white;
 }
 
 .eventHeaderText{
   font-size: 48px;
+  margin-left: 20px;
 }
 
 
@@ -55,7 +72,8 @@ body {
 .eventList {
   display: flex;
   flex-direction: row;
-  flex-wrap: ;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .eventContainer {
@@ -63,6 +81,7 @@ body {
     width: 260px;
     height: 141px;
 
+    margin: 0 0 10px 0;
     border-radius: 8px;
 
     display: flex;
