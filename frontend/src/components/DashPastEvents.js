@@ -1,7 +1,12 @@
 const DashPastEvents = (props) => {
+
     return (
         <div className="dashPastEvents">
-            <div className=''><h2>Upcoming Events</h2><span><a href=''>Past Events</a></span></div>
+            <div className='eventsHeader'>
+                <span className='eventHeaderText'>Upcoming Events</span>
+                <span><a href=''>Past Events</a></span>
+            </div>
+            <div className='eventList'>
                 {props.eventList && props.eventList.map((event, i)=>{
                     const random = Math.floor(Math.random()*20)*5
                     return (
@@ -16,6 +21,7 @@ const DashPastEvents = (props) => {
                         </div>
                     )
                 })}
+            </div>
         </div>
     )
 }

@@ -1,19 +1,21 @@
+import { Link } from "react-router-dom"
+import img from'../images/unsplash_topics.png';
 import { useContext } from 'react';
-import { Link } from "react-router-dom";
 import { Context } from "../context/Context";
 
 const Topics = () => {
 
-    const { nameState } = useContext(Context);
-    const [ name, setName ] = nameState;
+    const { firstNameState } = useContext(Context);
+    const [ firstName, setFirstName ] = firstNameState;
 
     return (
         <div className="topic">
-            <div className="topicImg">Left Image</div>
+            <img src={img} className="topicImg"/>
             <div className="topicRight">
-                <h2>Welcome to Team Rocket Trivia, {name}!</h2>
+                <h2>Welcome to Team Rocket Trivia, {firstName}!</h2>
                 <p>Which of these topics are you interested in?</p>
                 <div className="topicButtons">
+                   
                     <button >Music</button>
                     <button >Film</button>
                     <button >Sports</button>
@@ -24,7 +26,7 @@ const Topics = () => {
                     <button >Current Events</button>
                 </div>
                 <div className="topicNextPage">
-                    <Link to='/account'>Skip</Link>
+                    <Link to='/account' className="skip">Skip</Link>
                     <Link to='/account'>
                         <button className="buttons">Next</button>
                     </Link>

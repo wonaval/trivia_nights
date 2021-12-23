@@ -1,27 +1,33 @@
-import { useContext } from 'react';
+import { useState, useContext } from 'react';
+import { Context } from '../context/Context';
 import { Link } from 'react-router-dom';
-import { Context } from "../context/Context";
 
 const SignupForm = () => {
 
-    const { nameState, emailState } = useContext(Context);
-    const [ name, setName ] = nameState;
+    const { firstNameState, emailState } = useContext(Context);
     const [ email, setEmail ] = emailState;
+    const [ firstName, setFirstName ] = firstNameState;
 
     return (
         <div>
-             
             <form className="signupForm">
+                <div className='signUpLine'>
+                <p className='signUpLineName'>Name</p>
                 <input className="nameSignup"
                     type='text' 
                     placeholder="First name"
-                    // value={firstName}
-                    onChange={(e) => setName(e.target.value)}/>
+                    onChange={(e) => setFirstName(e.target.value)}/>
+ 
+                </div>
+                <div className='signUpLine'>
+                <p className='signUpLineEmail'>Email</p>
+
                 <input className="emailSignup"
                     type='text'
                     placeholder="Email"
-                    // value={email}
+
                     onChange={(e) => setEmail(e.target.value)}/>
+                </div>
                 <Link to="/topics">
                     <input className="buttons" type="submit" value='Sign Up'/>
                 </Link>

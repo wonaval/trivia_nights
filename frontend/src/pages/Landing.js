@@ -7,8 +7,7 @@ import Footer from "../components/Footer"
 const Landing = () => {
     return (
         <div className="userHome">
-             
-            <p>Landing Page</p>
+        
 
             <Header />
             <About />
