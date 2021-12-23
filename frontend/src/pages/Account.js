@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom'
 import { Context } from '../context/Context';
-import Confirmation from './Confirmation';
+// import Confirmation from './Confirmation';
 
 const Account = () => {
 
