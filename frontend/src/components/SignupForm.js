@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { Context } from '../context/Context';
 import { Link } from 'react-router-dom';
 
 const SignupForm = () => {
 
-    const [ firstName, setFirstName ] = useState("");
-    const [ email, setEmail ] = useState("");
-    const [ name, setName ] = useState("");
+    const { firstNameState, emailState } = useContext(Context);
+    const [ email, setEmail ] = emailState;
+    const [ firstName, setFirstName ] = firstNameState;
 
     return (
         <div>
@@ -15,7 +16,6 @@ const SignupForm = () => {
                 <input className="nameSignup"
                     type='text' 
                     placeholder="First name"
-                    // value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}/>
  
                 </div>
@@ -25,7 +25,7 @@ const SignupForm = () => {
                 <input className="emailSignup"
                     type='text'
                     placeholder="Email"
-                    // value={email}
+
                     onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <Link to="/topics">

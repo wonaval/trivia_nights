@@ -5,14 +5,14 @@ import { Context } from "../context/Context";
 
 const Topics = () => {
 
-    const { nameState } = useContext(Context);
-    const [ name, setName ] = nameState;
+    const { firstNameState } = useContext(Context);
+    const [ firstName, setFirstName ] = firstNameState;
 
     return (
         <div className="topic">
             <img src={img} className="topicImg"/>
             <div className="topicRight">
-                <h2>Welcome to Team Rocket Trivia, {name}!</h2>
+                <h2>Welcome to Team Rocket Trivia, {firstName}!</h2>
                 <p>Which of these topics are you interested in?</p>
                 <div className="topicButtons">
                    
