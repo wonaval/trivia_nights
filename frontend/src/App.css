@@ -449,7 +449,7 @@ text-align: left;
   }
 
 .accountForm input{
-  border: 1px solid gray;
+border: 1px solid gray;
 height: 64px;
 width: 406px;
 border-radius: 8px;
@@ -460,11 +460,11 @@ border-radius: 8px;
     display: flex;
   }
   .confirmationRight{
-    height: 379px;
-    width: 448px;
-    margin-left: 100px;
-    margin-top: 86px;
-    border-radius: 0px;
+      height: 379px;
+      width: 448px;
+      margin-left: 100px;
+      margin-top: 86px;
+      border-radius: 0px;
       margin-right: 221px;
       margin-bottom: 225px;
     }
