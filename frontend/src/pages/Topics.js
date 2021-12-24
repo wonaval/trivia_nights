@@ -15,7 +15,6 @@ const Topics = () => {
                 <h2>Welcome to Team Rocket Trivia, {firstName}!</h2>
                 <p>Which of these topics are you interested in?</p>
                 <div className="topicButtons">
-                   
                     <button >Music</button>
                     <button >Film</button>
                     <button >Sports</button>

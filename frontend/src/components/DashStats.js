@@ -1,24 +1,26 @@
 import { useEffect, useState } from "react"
+import { PieChart } from 'react-minimal-pie-chart'
+import env from 'react-dotenv'
 import axios from "axios"
 
 const DashStats = (props) => {
+    const chartData = [
+        { title: 'Two', value: 20, color: '#F3E45E'},
+        { title: 'One', value: 25, color: '#2D758F'},
+        { title: 'Three', value: 15, color: '#D33666'},
+    ]
+
     const [ userList, setUserList ] = useState([])
-
-    const getUsers = () => {
-        try {
-            axios.get('http://localhost:3001/users')
-            .then((response)=>{console.log(response); setUserList([...response.data.users]); console.log(response.data.users)})
-            console.log(userList)
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
 
     useEffect(()=>{
         getUsers()
     }, [])
 
+    const getUsers = () => {
+        axios.get(`${env.REACT_APP_BACKEND_URL}/users`)
+        .then((response)=>{setUserList(response.data.users)})
+        .catch ((err)=>{console.log('Error fetching')})
+    }
 
     return (
         <div className="dashStats" >
@@ -30,12 +32,42 @@ const DashStats = (props) => {
                     {userList && userList.map((user, i)=>{
                         return (
                             <div key={i} className='userContainer'>
-                                <span className='userName'>{user.name}</span>
+                                <span className='userName'>{`${user.first} ${user.last}`}</span>
                                 <span className='userEmail'>{user.email}</span>
-                                <span className='userDate'>{user.signup_date.slice(0, 10)}</span>
+                                <span className='userDate'>{user.signup.slice(0, 10)}</span>
                             </div>
                         )
                     })}
+                </div>
+            </div>
+            <div className='userInterests'>
+                <div className='intHeaders'>
+                    <span className='intHeaderText'>User Interests</span>
+                </div>
+                <div className='intMain'>
+                    <div className='intLeft'>
+                        <div className='usersText'>{userList.length} Users</div>
+                        <div className='bars'>
+                            <div>Topics</div>
+                            <div className='fullBar'><div className='bar1'></div></div>
+                            <div className='fullBar'><div className='bar2'></div></div>
+                            <div className='fullBar'><div className='bar3'></div></div>
+                        </div>
+                    </div>
+                    <div className='intRight'>
+                        <div className='pieChart'>
+                            <PieChart data={chartData} viewBoxSize={0, 0} />
+                        </div>
+                        <div className='legend'>
+                            <div className='sports'></div><div>Sports</div>
+                        </div>
+                        <div className='legend'>
+                            <div className='music'></div><div>Music</div>
+                        </div>
+                        <div className='legend'>
+                            <div className='film'></div><div>Film</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

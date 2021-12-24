@@ -4,7 +4,7 @@ const DashPastEvents = (props) => {
         <div className="dashPastEvents">
             <div className='eventsHeader'>
                 <span className='eventHeaderText'>Upcoming Events</span>
-                <span><a href=''>Past Events</a></span>
+                <span className='pastLink'><a href=''>Past Events</a></span>
             </div>
             <div className='eventList'>
                 {props.eventList && props.eventList.map((event, i)=>{

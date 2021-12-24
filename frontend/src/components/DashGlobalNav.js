@@ -1,27 +1,32 @@
 import { Link } from 'react-router-dom';
+import location from '../images/location.png'
+import report from '../images/report.png'
+import users from '../images/users.png'
+import account from '../images/account.png'
+import events from '../images/events.png'
 const DashGlobalNav = () => {
 
     
     return (
         <div className='dashGlobalNav'>
             <section>
-                <img alt="map pin drop icon" />
+                <img src={location} alt="map pin drop icon" />
                 <Link to='/'>Manage Locations</Link>
             </section>
             <section>
-                <img alt="people gathered icon" />
+                <img src={users} alt="people gathered icon" />
                 <Link to='/'>Manage Users</Link>
             </section>
             <section>
-                <img alt="calendar icon" />
+                <img src={events} alt="calendar icon" />
                 <Link to='/'>Manage Events</Link>
             </section>
             <section>
-                <img alt="document icon" />
+                <img src={report} alt="document icon" />
                 <Link to='/'>Create Report</Link>
             </section>
             <section>
-                <img alt="circular portrait icon" />
+                <img src={account} alt="circular portrait icon" />
                 <Link to='/'>My Account</Link>
             </section>
         </div>

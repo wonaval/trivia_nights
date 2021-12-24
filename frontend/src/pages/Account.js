@@ -38,13 +38,13 @@ const Account = () => {
                 <form 
                     className='accountForm'>
                     <p>First Name</p>
-                    <input type='text' value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
+                    <input type='text' className='accountInput' value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
                     <p>Last Name</p>
-                    <input type='text' value={lastName} placeholder='Last Name' onChange={(e) => setLastName(e.target.value)}/>
+                    <input type='text' className='accountInput' value={lastName} placeholder='Last Name' onChange={(e) => setLastName(e.target.value)}/>
                     <p>Email</p>
-                    <input type='text' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input type='text' className='accountInput' value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <p>Password</p>
-                    <input type='password' value={password} placeholder='Password' onChange={(e) => setPassword(e.target.value)}/> 
+                    <input type='password' className='accountInput' value={password} placeholder='Password' onChange={(e) => setPassword(e.target.value)}/> 
                 </form>
                 <Link to="/fakeEvents" className='skip'>Skip</Link>
                 <button
