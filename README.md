@@ -1,14 +1,14 @@
 # Team Rocket Trivia
 
 ## Team Rocket
-<div>SEIR Develpers - Will Naval, Marco Colucci, Cullen Reddy</div>
-<div>UXDI Designers - Cait Taylor, Ivan Capanzana, Rebecca Sokol</div>
+<div>Developers - Will Naval, Marco Colucci, Cullen Reddy</div>
+<div>UX Designers - Cait Taylor, Ivan Capanzana, Rebecca Sokol</div>
 
 ## Project overview
 <div>For this UI Design and Development project, your team’s assignment is to create an accessible landing page for users and a dashboard for your client. </div>
 
 ## Deployment
-<div>Figma design may be found at https://www.figma.com/file/9K7uIlhu3VBzaGkszL5kqQ/Trivia-Night?node-id=0%3A1</div>
+<div>Figma designs may be found at https://www.figma.com/file/9K7uIlhu3VBzaGkszL5kqQ/Trivia-Night?node-id=0%3A1</div>
 <div>Initial development is located at https://github.com/Marcolux/trivia_nights</div>
 
 ## Target user profile
@@ -28,7 +28,6 @@
 - Do not need to worry about the OS.
 
 ## User stories
-
 ### General
 - As a business, we need this landing page to represent our brand and entice the target users to join our group
 - As a user, I want to learn more about the client and their offerings.
