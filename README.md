@@ -1,6 +1,6 @@
 # Team Rocket Trivia
 
-##Team Rocket
+## Team Rocket
 SEIR Develpers - Will Naval, Marco Colucci, Cullen Reddy
 UXDI Designers - Cait Taylor, Ivan Capanzana, Rebecca Sokol
 
