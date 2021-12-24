@@ -10,7 +10,6 @@
 ## Deployment
 <div>Figma design may be found at https://www.figma.com/file/9K7uIlhu3VBzaGkszL5kqQ/Trivia-Night?node-id=0%3A1</div>
 <div>Initial development is located at https://github.com/Marcolux/trivia_nights</div>
-<div>Continued developtment will be at fork https://github.com/wonaval/trivia_nights</div>
 
 ## Target user profile
 - Already aware of and incentivized to be on the client’s website.
