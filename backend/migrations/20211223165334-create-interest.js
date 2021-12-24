@@ -6,46 +6,46 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       userid: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       music: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       film: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       sports: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       general: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       popular: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       history: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       science: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       current: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
   down: async (queryInterface, Sequelize) => {
     await queryInterface.dropTable('interests');
-  }
+  },
 };

@@ -12,9 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/topics" element={ <Topics /> } />
-        <Route path="/account" element={ <Account /> } />
-        <Route path="/account/Confirmation" element={ <Confirmation /> } />
+        <Route path="/topics" element={<Topics />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/account/Confirmation" element={<Confirmation />} />
       </Routes>
     </div>
   );
