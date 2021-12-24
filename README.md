@@ -7,6 +7,11 @@ UXDI Designers - Cait Taylor, Ivan Capanzana, Rebecca Sokol
 ## Project overview
 For this UI Design and Development project, your team’s assignment is to create an accessible landing page for users and a dashboard for your client. 
 
+## Deployment
+Figmat design may be found at https://www.figma.com/file/9K7uIlhu3VBzaGkszL5kqQ/Trivia-Night?node-id=0%3A1
+Initial development is located at https://github.com/Marcolux/trivia_nights
+Continued developtment will be at fork https://github.com/wonaval/trivia_nights
+
 ## Target user profile
 Already aware of and incentivized to be on the client’s website.
 Access the website via both desktop and mobile.
