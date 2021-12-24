@@ -13,10 +13,9 @@ userController.createUser= async (req,res)=>{
             location:req.body.location
         })
         res.json({newUser});
-        
     }
     catch(err){
-        res.json(err);
+        res.json(err.message);
     }
 }
 

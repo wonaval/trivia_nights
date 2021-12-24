@@ -2,50 +2,59 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
     await queryInterface.bulkInsert('users',
     [
       {
-        name: 'John Doe',
+        first: 'John',
+        last: 'Doe',
         email: 'test@test.com',
         password: '123',
-        signup_date: new Date(),
-        interest: 'Test',
+        signup: new Date(),
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Will Naval',
+        first: 'Will',
+        last: 'Naval',
         email: 'will@test.com',
         password: '123',
-        signup_date: new Date(),
-        interest: 'Test',
+        signup: new Date(),
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Cullen Reddy',
+        first: 'Cullen',
+        last: 'Reddy',
         email: 'cullen@test.com',
         password: '123',
-        signup_date: new Date(),
-        interest: 'Test',
+        signup: new Date(),
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        name: 'Marco Colucci',
+        first: 'Marco',
+        last: 'Colucci',
         email: 'marco@test.com',
         password: '123',
-        signup_date: new Date(),
-        interest: 'Test',
+        signup: new Date(),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        first: 'Jennifer',
+        last: 'Lai',
+        email: 'jennie@test.com',
+        password: '123',
+        signup: new Date(),
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        first: 'Jeffrey',
+        last: 'Tse',
+        email: 'heff@test.com',
+        password: '123',
+        signup: new Date(),
         createdAt: new Date(),
         updatedAt: new Date()
       }

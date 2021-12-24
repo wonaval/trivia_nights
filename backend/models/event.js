@@ -11,7 +11,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      models.event.belongsToMany(models.user, { through: 'user_event' })
     }
   };
   event.init({
@@ -20,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     theme: DataTypes.STRING,
     date: DataTypes.STRING,
     capacity: DataTypes.INTEGER,
-    event_details: DataTypes.STRING
+    details: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'event',

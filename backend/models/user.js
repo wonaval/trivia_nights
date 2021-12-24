@@ -11,31 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      models.user.belongsToMany(models.event, { through: 'user_event' })
     }
   };
   user.init({
-    name: {
-      type : DataTypes.STRING,
-      allowNull:false
-    },
-    email: {
-      type :DataTypes.STRING,
-      unique: true,
-      allowNull:false
-    },
-    signup_date: DataTypes.STRING,
-    interest: DataTypes.STRING,
-    location: DataTypes.STRING,
-    password:DataTypes.STRING,
-    music:DataTypes.BOOLEAN,
-    film:DataTypes.BOOLEAN,
-    sports:DataTypes.BOOLEAN,
-    general:DataTypes.BOOLEAN,
-    popCulture:DataTypes.BOOLEAN,
-    history:DataTypes.BOOLEAN,
-    science:DataTypes.BOOLEAN,
-    currentEvents:DataTypes.BOOLEAN
+    first: DataTypes.STRING,
+    last: DataTypes.STRING,
+    email: DataTypes.STRING,
+    password: DataTypes.STRING,
+    signup: DataTypes.DATE
   }, {
     sequelize,
     modelName: 'user',

@@ -14,5 +14,5 @@ const eventRoutes= require('./routes/eventRoutes')
 app.use('/events', eventRoutes)
 
 app.listen(3001, () => {
-        routesReport.print()
+  routesReport.print()
 })

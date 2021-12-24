@@ -1,8 +1,6 @@
 {
   "development": {
-    "username":"postgres",
-    "password":"secret123",
-    "database": "trivia_nights",
+    "database": "trivia-nights",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
