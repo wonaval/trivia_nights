@@ -29,10 +29,14 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <DashHeader />
-      <DashGlobalNav />
-      <DashStats userList={userList} setUserList={setUserList} />
-      <DashPastEvents eventList={eventList} setEventList={setEventList} />
+      <div className="dashboardLeft">
+        <DashGlobalNav />
+      </div>
+      <div className="dashboardRight">
+        <DashHeader />
+        <DashStats userList={userList} setUserList={setUserList} />
+        <DashPastEvents eventList={eventList} setEventList={setEventList} />
+      </div>
     </div>
   );
 };

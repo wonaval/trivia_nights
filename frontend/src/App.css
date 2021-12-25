@@ -1,4 +1,4 @@
-body{
+body {
   padding: 0px;
 }
 
@@ -9,6 +9,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .userHome {
@@ -23,7 +24,7 @@ body{
   background: url('./images/image\ 1.png');
   background-position: center;
   background-size: cover;
-  height:565px;
+  height: 565px;
   width: 1512px;
   color: white;
   display: flex;
@@ -37,7 +38,7 @@ body{
   width: 1069px;
   height: 46px;
   margin-top: 30px;
-  margin-left:225px;
+  margin-left: 225px;
   justify-content: right;
   align-items: center;
 }
@@ -51,15 +52,13 @@ body{
   color: aliceblue;
   margin-right: 50px;
   font-size: 16px;
-  
-  
 }
 
 .login {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2D758F;
+  background: #2d758f;
   font-size: 16px;
   text-align: center;
   width: 80px;
@@ -140,7 +139,7 @@ body{
 
 .nameSignup {
   border-radius: 8px;
-  border:1px solid black;
+  border: 1px solid black;
   padding-left: 10px;
   margin-right: 5px;
   width: 150px;
@@ -149,7 +148,7 @@ body{
 
 .emailSignup {
   border-radius: 8px;
-  border:1px solid black;
+  border: 1px solid black;
   padding-left: 10px;
   margin-right: 11px;
   width: 350px;
@@ -158,12 +157,12 @@ body{
 
 .buttons {
   width: 170px;
-  background: #E23D6F;
+  background: #e23d6f;
   color: white;
   border: none;
   border-radius: 8px;
-  padding-top: .5vmin;
-  padding-bottom: .5vmin;
+  padding-top: 0.5vmin;
+  padding-bottom: 0.5vmin;
   padding-left: 2vmin;
   padding-right: 2vmin;
   font-size: 18px;
@@ -173,9 +172,9 @@ body{
 
 .homePageSection {
   display: flex;
-  margin-left:221px;
-  margin-top:103px;
-  justify-content:space-evenly;
+  margin-left: 221px;
+  margin-top: 103px;
+  justify-content: space-evenly;
   height: 353px;
   width: 1070px;
 }
@@ -217,9 +216,9 @@ body{
 }
 
 .buttonTeal {
-  background: #2D758F;
+  background: #2d758f;
   margin-bottom: 30px;
-  border-radius: .8vmin;
+  border-radius: 0.8vmin;
   color: white;
   border: 1px solid black;
   text-decoration: none;
@@ -240,7 +239,7 @@ body{
 
 .footer {
   background: black;
-  color:white ;
+  color: white;
   display: flex;
   margin-top: 100px;
   height: 15vh;
@@ -255,7 +254,7 @@ body{
 }
 
 .footer p {
-  margin-left:221px;
+  margin-left: 221px;
   font-family: Open Sans;
   font-size: 16px;
   font-style: normal;
@@ -276,7 +275,9 @@ body{
   display: flex;
 }
 
-.topicImg, .accountImg, .confImage {
+.topicImg,
+.accountImg,
+.confImage {
   height: 1040px;
   width: 760px;
 }
@@ -294,8 +295,8 @@ body{
 .topicRight {
   height: 589px;
   width: 440px;
-  margin-top:86px;
-  margin-left:100px;
+  margin-top: 86px;
+  margin-left: 100px;
   margin-right: 221px;
   margin-bottom: 225px;
 }
@@ -307,7 +308,7 @@ body{
   line-height: 44px;
   text-align: left;
   padding-bottom: 40px;
-  border-bottom: 3px solid gray ;
+  border-bottom: 3px solid gray;
 }
 
 .topicRight p {
@@ -332,7 +333,7 @@ body{
 
 .topicButtons button {
   color: #1e5b72;
-  border:1px solid #1e5b72 ;
+  border: 1px solid #1e5b72;
   background: none;
   height: 64px;
   border-radius: 8px;
@@ -368,11 +369,11 @@ body{
   width: 441px;
   margin-left: 100px;
   margin-top: 86px;
-  margin-top:86px;
-  margin-left:100px;
+  margin-top: 86px;
+  margin-left: 100px;
   margin-right: 221px;
   margin-bottom: 225px;
-  }
+}
 
 .accountRight h2 {
   font-family: Open Sans;
@@ -383,7 +384,7 @@ body{
   letter-spacing: 0em;
   text-align: left;
   padding-bottom: 40px;
-  border-bottom: 3px solid gray ;
+  border-bottom: 3px solid gray;
 }
 
 .accountRight p {
@@ -410,7 +411,7 @@ body{
   line-height: 27px;
   letter-spacing: 0em;
   text-align: left;
-  }
+}
 
 .accountForm input {
   border: 1px solid gray;
@@ -442,5 +443,5 @@ body{
   letter-spacing: 0em;
   text-align: left;
   padding-bottom: 40px;
-  border-bottom: 3px solid gray ;
+  border-bottom: 3px solid gray;
 }

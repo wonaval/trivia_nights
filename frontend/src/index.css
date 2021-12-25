@@ -13,17 +13,16 @@ code {
 }
 
 body {
-  background-color: #E5E5E5;
+  min-height: 100%;
+  background-color: #e5e5e5;
 }
 
+/* DASHBOARD */
 
-/* DASH GLOBAL NAV */
-
-.dashGlobalNav {
-  background: #1E5B72;
+.dashboard {
+  display: flex;
+  flex-direction: row;
 }
-
-
 
 /* UPCOMING EVENTS */
 
@@ -39,7 +38,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 0 10px 0;
-  background-color:#9A2143;
+  background-color: #9a2143;
   color: white;
   margin-bottom: 10px;
   border-radius: 8px;
@@ -57,7 +56,7 @@ a {
   font-style: italic;
 }
 
-.eventHeaderText{
+.eventHeaderText {
   font-family: Open Sans;
   font-size: 48px;
   font-style: normal;
@@ -65,7 +64,7 @@ a {
   line-height: 65px;
   letter-spacing: 0em;
   text-align: left;
-  
+
   margin-left: 20px;
 }
 
@@ -84,7 +83,7 @@ a {
 }
 
 .progressInner {
-  background-color: #9A2143;
+  background-color: #9a2143;
   border-radius: 0 0 0 8px;
   height: 33px;
 }
@@ -97,7 +96,7 @@ a {
 }
 
 .eventContainer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 260px;
   height: 141px;
 
@@ -111,7 +110,7 @@ a {
 }
 
 .eventName {
-  color: #2D758F;
+  color: #2d758f;
   font-size: 22px;
   margin-left: 20px;
 }
@@ -127,7 +126,6 @@ a {
   font-size: 16px;
   margin-left: 20px;
 }
-
 
 /* NEW USERS */
 
@@ -150,8 +148,8 @@ a {
 }
 
 .newUsersHeader {
-  background-color: #9A2143;
-  color: #FFFFFF;
+  background-color: #9a2143;
+  color: #ffffff;
   border-radius: 8px 8px 0 0;
   width: 440px;
   height: 40px;
@@ -165,7 +163,6 @@ a {
   line-height: 33px;
   letter-spacing: 0em;
   text-align: left;
-  
 }
 
 .userHeaderMargin {
@@ -208,15 +205,15 @@ a {
 .userInterests {
   width: 350px;
   height: 255px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 8px;
 }
 
 .intHeaders {
   width: inherit;
   height: 40px;
-  background: #9A2143;
-  color: #FFFFFF;
+  background: #9a2143;
+  color: #ffffff;
   border-radius: 8px 8px 0 0;
 
   display: flex;
@@ -251,7 +248,7 @@ a {
   line-height: 44px;
   letter-spacing: 0em;
   text-align: left;
-  color: #2D758F;
+  color: #2d758f;
   margin: 20px 0 0 20px;
 }
 
@@ -270,21 +267,20 @@ a {
   justify-content: flex-start;
 }
 
-.bar1{
-  background-color: #D33666;
+.bar1 {
+  background-color: #d33666;
   width: 50%;
 }
 
-.bar2{
-  background-color: #F3E45E;
+.bar2 {
+  background-color: #f3e45e;
   width: 65%;
 }
 
-.bar3{
-  background-color: #2D758F;
+.bar3 {
+  background-color: #2d758f;
   width: 70%;
 }
-
 
 .intRight {
   width: 50%;
@@ -304,7 +300,9 @@ a {
   padding: 2px;
 }
 
-.sports, .music, .film {
+.sports,
+.music,
+.film {
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -312,13 +310,74 @@ a {
 }
 
 .sports {
-  background-color: #F3E45E;
+  background-color: #f3e45e;
 }
 
 .music {
-  background-color: #2D758F;
+  background-color: #2d758f;
 }
 
 .film {
-  background-color: #D33666;
+  background-color: #d33666;
+}
+
+/* DASHBOARD NAV */
+
+.dashGlobalNav {
+  width: 260px;
+  height: 100%;
+  margin-right: 10px;
+  background: #1e5b72;
+}
+
+.dashGlobalNav Link {
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.navHeader {
+  margin: 40px 0;
+}
+
+.dashRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 36px;
+  margin-bottom: 20px;
+}
+
+.dashIcon {
+  width: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.dashLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15px;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+}
+
+.dashLink a {
+  text-decoration: none;
+  font-style: normal;
 }
