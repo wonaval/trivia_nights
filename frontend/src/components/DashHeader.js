@@ -4,13 +4,13 @@ const DashHeader = () => {
   return (
     <div className="dashHeader">
       <div>
-        <input type="text" className="dash-search" />
+        <input type="text" />
       </div>
-      <div className="dash-header__text">Users</div>
-      <div className="dash-main">
-        <div className="dash-left">
+      <div>Users header</div>
+      <div>
+        <div>
+          <div>Sign-ups header</div>
           <div>
-            <div className="dash-left-header">Sign-ups</div>
             <div>671</div>
             <div>Users</div>
           </div>
