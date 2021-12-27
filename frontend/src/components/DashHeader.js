@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import line from '../images/line-graph.png';
 
 const DashHeader = () => {
   return (
@@ -21,7 +21,9 @@ const DashHeader = () => {
         </div>
         <div className="dash-right">
           <div className="dash-right-header">Sign-ups: Last 180 days</div>
-          <div>Line graph</div>
+          <div>
+            <img src={line} />
+          </div>
         </div>
       </div>
     </div>

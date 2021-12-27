@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { PieChart } from 'react-minimal-pie-chart';
 import env from 'react-dotenv';
 import axios from 'axios';
+
+import piechart from '../images/pie-chart.png';
 
 const DashStats = (props) => {
   const chartData = [
@@ -68,19 +69,19 @@ const DashStats = (props) => {
           </div>
           <div className="intRight">
             <div className="pieChart">
-              <PieChart data={chartData} viewBoxSize={(0, 0)} />
+              <img src={piechart} />
             </div>
             <div className="legend">
               <div className="sports"></div>
-              <div>Sports</div>
+              <div className="legend-text">Sports</div>
             </div>
             <div className="legend">
               <div className="music"></div>
-              <div>Music</div>
+              <div className="legend-text">Music</div>
             </div>
             <div className="legend">
               <div className="film"></div>
-              <div>Film</div>
+              <div className="legend-text">Film</div>
             </div>
           </div>
         </div>
