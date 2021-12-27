@@ -1,27 +1,32 @@
-import line from '../images/line-graph.png';
+import linegraph from '../images/line-graph.png';
+import search from '../images/search.png';
 
 const DashHeader = () => {
+  const randomUsers = Math.floor(Math.random() * 1000);
+  const randomUnsub = Math.floor(Math.random() * randomUsers);
+
   return (
     <div className="dashHeader">
-      <div>
-        <input type="text" />
+      <div className="search-icon">
+        <input type="text" className="dash-search" />
+        <img src={search} />
       </div>
-      <div>Users header</div>
-      <div>
-        <div>
-          <div>Sign-ups header</div>
-          <div>
-            <div>671</div>
-            <div>Users</div>
-          </div>
-          <div>
-            <div>71</div>
-            <div>Unsubscribed</div>
+      <div className="dash-header__text">Users</div>
+      <div className="dash-main">
+        <div className="dash-left">
+          <div className="dash-left-header">Sign-ups</div>
+          <div className="dash-left--main">
+            <div className="dash-user-number">{randomUsers}</div>
+            <div className="dash-user-unsub">Users</div>
+            <div className="dash-unsub-number">{randomUnsub}</div>
+            <div className="dash-user-unsub">Unsubscribed</div>
           </div>
         </div>
-        <div>
-          <div>Sign-ups: Last 180 days (header)</div>
-          <div>Line graph</div>
+        <div className="dash-right">
+          <div className="dash-right-header">Sign-ups: Last 180 days</div>
+          <div>
+            <img className="linegraph" src={linegraph} />
+          </div>
         </div>
       </div>
     </div>
