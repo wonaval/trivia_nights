@@ -19,11 +19,9 @@ const DashHeader = () => {
             <div>Unsubscribed</div>
           </div>
         </div>
-        <div className="dash-right">
-          <div className="dash-right-header">Sign-ups: Last 180 days</div>
-          <div>
-            <img src={line} />
-          </div>
+        <div>
+          <div>Sign-ups: Last 180 days (header)</div>
+          <div>Line graph</div>
         </div>
       </div>
     </div>
